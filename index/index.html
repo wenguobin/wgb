@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="new_file.css"/>
+	</head>
+	
+	<script src="jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$.get("new_file.json",function(data){
+			$(".logo").attr("src",data.logo)
+		})
+		$.get("new_file.json",function(data){
+			$(".code").attr("src",data.code)
+		})
+	</script>
+	<body>
+		<div class="top-mod-header">
+			
+			<div class="top-title">
+				<div class="top-title-center">
+				<ul class="title-ul">
+				<li class="title-li1"><a class="aq" href="">帮助中心</a></li>
+				<li class="title-li1"><a class="aq" href="">收藏本站</a></li>
+				</ul>
+				<ul class="title-ul2">
+				<li class="title-li2"><i class="iconfont icon-shouji"></i><a class="aq" href="">手机360商城</a></li>
+				<li class="title-li2"><a class="aq" href="">注册</a></li>
+				<li class="title-li2"><a class="aq" href="">登录</a></li>
+				</ul>
+				</div>
+			</div>
+			
+			<div class="top-main-header">
+				<div class="top-main-left">
+					<img class="logo"/>
+				</div>
+				
+				<div class="header-tools-clearfix">
+					<div class="suggest-box">
+						<div class="suggest-box-son">
+							<input type="text" id="__mall_search_kw__" placeholder="请输入关键字" />
+							<input type="button" id="__mall_search_btn__"/>
+							<p class="searchkey">
+								<a class="searchkey-a" href="">安全路由</a>
+								<a class="searchkey-a" href="">儿童手表SE3 Plus</a>
+								<a class="searchkey-a" href="">智能摄像机云台版</a>
+								<a class="searchkey-a" href="">行车记录仪G600 </a>
+								<a class="searchkey-a" href="">电话手表X1 Pro</a>
+							</p>
+						</div>
+						<div class="topshopcart">
+							<div class="header-gwc"></div>
+							<a class="header-cart" href="">我的购物车<span class="header-cart-son">(0)</span></a>
+						</div>
+					</div>
+					<div class="codeimgbox">
+						<img class="code"/>	
+					</div>
+				</div>
+				<div class="top-container">
+						<ul class="navbar-column-list-clearfix">
+							<li class="top-item-topfirst"><a class="before"><div class="befores"></div></a></li>
+							<!--<li class="top-item">安全路由</li>
+							<li class="top-item">儿童手表</li>
+							<li class="top-item">家庭安防</li>
+							<li class="top-item">行车记录仪</li>
+							<li class="top-item">生活电器</li>
+							<li class="top-item">配件</li>
+							<li class="top-item">社区</li>-->
+						</ul>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
