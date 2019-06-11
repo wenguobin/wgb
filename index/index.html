@@ -11,99 +11,37 @@
 	
 	<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
 	
-	<script type="text/javascript">
-		$(function(){
-			$.ajax({
-				type:"get",
-				url:"new_file.json",
-				async:false,
-				success:function(data){
-					for (var s = 0 ; s < data.slider.length ; s++) {
-						$(".swiper-wrapper").append('<div class="swiper-slide"><img src="'+data.slider[s]+'" /></div>')
-					}
-				}
-			});
-				$.get("new_file.json",function(data){
-					$(".logo").attr("src",data.logo)
-					console.log(data.slider)
-					
-					
-				})
-		
-			var mySwiper = new Swiper ('.swiper-container', {
-		    direction: 'horizontal', // 垂直切换选项
-		    loop: true, // 循环模式选项
-		    
-		    // 如果需要分页器
-		    pagination: {
-		      el: '.swiper-pagination',
-		    },
-		    
-		    // 如果需要前进后退按钮
-		    navigation: {
-		      nextEl: '.swiper-button-next',
-		      prevEl: '.swiper-button-prev',
-		    },
-		    
-		    // 如果需要滚动条
-		    scrollbar: {
-		      el: '.swiper-scrollbar',
-		    },
-		  })
-		
-		})
-		        
-
-	</script>
-	<body style="min-width:1350px;">
+	<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	
+	<body style="min-width:1350px;height:3000px;">
 		<div class="top-mod-header">
 			<!--吸顶广告 start-->
 			<div class="topbox">
 				<!--零导航 end-->
 				<div class="top-container">
 					<ul class="title-ul">
-						<li class="title-li1">
-							<a href="#">帮助中心</a>
-						</li>
+						<li class="title-li1"></li>
 						
-						<li class="title-li1">
-							<a href="#">收藏本站</a>
-						</li>
+						<li class="title-li1"></li>
 						
 						<li class="title-li2">
 							<i class="iconfont icon-shouji"></i><a href="#">手机360商场</a>
 						</li>
 						
-						<li class="title-li3"> 
-							<a href="#">注册</a>
-							<a href="#">登录</a> 
-						</li>
+						<li class="title-li3"></li>
 					</ul>
 				</div>
 			</div>
 			
 			<div class="top-container-2">
 				<!--logo start-->
-				<div class="header-logo">
-					<a class="sellogo" href="#">
-						<img class="logo"/>
-					</a>
-				</div>
+				<div class="header-logo"></div>
 				<!--logo end-->
 				<div class="header-tools">
 					<!--搜索框 start-->
 					<div class="suggest-box">
-						<form id="__mall_search_form__" action="/search/" method="get">
 							<input type="text" class="suggest" placeholder="请输入关键字">
 							<input type="submit" value="" class="search-btn">
-							</form>
-							<p class="searchkey">
-								<a class="searchkey-a" href="#">安全路由</a>
-								<a class="searchkey-a" href="#">儿童手表SE3 Plus</a>
-								<a class="searchkey-a" href="#">智能摄像机云台版</a>
-								<a class="searchkey-a" href="#">行车记录仪G600</a>
-								<a class="searchkey-a" href="#">电话手表X1 Pro</a>
-							</p>
                        </div>
                        <!--搜索框 end-->
                        <!--购物车 start-->
@@ -122,13 +60,6 @@
 							<li class="top-item-topfirst">
 								<a class="topfirst" href="#"><i class="before"></i>全部智能酷品</a>
 							</li>
-							<li class="top-item">安全路由</li>
-							<li class="top-item">儿童手表</li>
-							<li class="top-item">家庭安防</li>
-							<li class="top-item">行车记录仪</li>
-							<li class="top-item">生活电器</li>
-							<li class="top-item">配件</li>
-							<li class="top-item">社区</li>
 						</ul>
 						<a class="navbar-qbar" href="http://i360mall.com/">返回旧版>></a>
 					</div>
@@ -141,13 +72,23 @@
 			</div>
 			<!-- 如果需要分页器 -->
 			<div class="swiper-pagination"></div>
-
-			<!-- 如果需要导航按钮 -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-
-			<!-- 如果需要滚动条 -->
-			<!--<div class="swiper-scrollbar"></div>-->
+	 	</div>
+	 	<!-- 热门活动 -->
+	 	<div class="part-hot">
+	 		<div class="hot-hd"></div>
+	 		<ul class="hot-list">
+	 			<li class="first"></li>
+	 			<li class="two"></li>
+	 			<li class="three"></li>
+	 		</ul>
+	 	</div>
+	 	<!-- 限时购 begin -->
+	 	<div class="xs-buy-mod">
+	 		
+	 		<div class="mod-hd">
+	 			<div class="mod-box"></div>
+	 		</div>
+	 		
 	 	</div>
 	</body>
 </html>

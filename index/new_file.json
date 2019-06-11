@@ -1,5 +1,32 @@
 {
 	"slider":["img/banner.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg","img/banner6.jpg","img/banner7.png"],
-	"logo":"img/logo.png"
-}
+	
+	"daohan":["帮助中心","收藏本站"],
+	
+	"daohan_3":["登录","注册"],
+	
+	"logo":"img/logo.png",
+	
+	"search_a":["安全路由","儿童手表SE3 Plus","智能摄像机云台版","行车记录仪G600","电话手表X1 Pro"],
+	
 
+	"topitem":["安全路由","儿童手表","家庭安防","行车记录仪","生活电器","配件","社区"],
+	
+	"tit":["热门活动"],
+	
+	"name_text":["360AI音箱MAX－M1","360扫地机器人S6","360可视门铃1C"],
+	
+	"much_text":["¥199","¥998","¥269"],
+	
+	"imgM1":["img/360M1.png","img/360s6.png","img/3601c.png"],
+	"tit_img":"img/tit-seckill.png",
+	"naoz":"img/naoz.png",
+	"cout_sj":["12",":","00",":","00"],
+	"box_img":["img/Crossdog.jpg","img/LOZ1621.jpg","img/mushu.jpg","img/LOZ1720.jpg"],
+	 "box_text_name":["Cross Humanity 家庭影院迷你音响 斗牛犬艺术蓝牙音箱低音炮 8W 金色",
+	 				  "LOZ 俐智 街景小颗粒积木拼插玩具 1621蛋糕店",
+	 				  "mushu木薯 蒸脸器冷热喷雾美容仪MS1601 白色",
+	 				  "LOZ 俐智 迷你街景拼插积木玩具 1720旋转木马"],
+	 "box_text_much":["¥609","¥39","¥399","¥49"],
+	 "del":["¥659","¥49","¥499","59"]
+}
